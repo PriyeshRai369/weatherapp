@@ -8,7 +8,7 @@ btn.addEventListener('click',()=>{
     let city = input.value
     let url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`
     
-    let response = fetch(url)
+    let response =fetch(url)
     response.then((data)=>{
         return data.json()
     }).then((value)=>{
